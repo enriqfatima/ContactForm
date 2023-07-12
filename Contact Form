@@ -1,0 +1,31 @@
+from tkinter import * # gui module
+
+#begin code for GUI 
+window = Tk()
+window.title("Contact Information") #title
+window.geometry("300x300") #window size 
+
+#data info section 
+name_label = Label(window, text = "Name")
+name_entry = Entry(window, bd = 5)
+
+email_label = Label(window, text = "Email")
+email_entry = Entry(window, bd = 5)
+
+phone_number_label = Label(window, text = "Phone Number")
+
+phone_number_entry = Entry(window, bd = 5)
+
+
+##GUI LAYOUT###
+#data info layout 
+name_label.grid(row = 0, column = 0)
+name_entry.grid(row = 0, column = 1)
+
+email_label.grid(row = 1, column = 0)
+email_entry.grid(row = 1, column = 1)
+
+phone_number_label.grid (row = 3, column = 0)
+
+phone_number_entry.grid(row = 3, column = 1)
+
